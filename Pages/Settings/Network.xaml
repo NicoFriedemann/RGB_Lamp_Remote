@@ -41,14 +41,14 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
 
-                    <TextBlock Text="RGB-Lamp IP:" VerticalAlignment="Center" Margin="0,0,16,4" ToolTip="IP of esp32 controlled RGB-Lamp"/>
-                    <TextBox Grid.Column="1" Name="rgb_lamp_ip"></TextBox>
+                    <TextBlock Text="RGB-Lamp IP:" VerticalAlignment="Center" Margin="0,0,16,4" ToolTip="IP of esp32 controlled RGB-Lamp" />
+                    <TextBox Grid.Column="1" Name="rgb_lamp_ip" Text="{Binding PartnerIP, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
                     <TextBlock Grid.Row="1" Text="RGB-Lamp Port:" VerticalAlignment="Center" Margin="0,0,16,0" ToolTip="command port of esp32 controlled RGB-Lamp"/>
-                    <TextBox Grid.Row="1" Grid.Column="1" Name="rgb_lamp_port"></TextBox>
+                    <TextBox Grid.Row="1" Grid.Column="1" Name="rgb_lamp_port" Text="{Binding PartnerPort, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
                     <TextBlock Grid.Row="2" Text="Debug Port:" VerticalAlignment="Center" Margin="0,0,16,0" ToolTip="own port for esp32 controlled RGB-Lamp debug messages"/>
-                    <TextBox Grid.Row="2" Grid.Column="1" Name="debug_port"></TextBox>
+                    <TextBox Grid.Row="2" Grid.Column="1" Name="debug_port" Text="{Binding RemoteListeningPort, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
                 </Grid>
             </StackPanel>

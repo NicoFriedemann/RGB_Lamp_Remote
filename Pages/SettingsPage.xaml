@@ -9,8 +9,8 @@
     <Grid Style="{StaticResource ContentRoot}">
         <mui:ModernTab Layout="List" SelectedSource="/Pages/Settings/Appearance.xaml">
             <mui:ModernTab.Links>
-                <mui:Link DisplayName="appearance" Source="/Pages/Settings/Appearance.xaml" />
                 <mui:Link DisplayName="network" Source="/Pages/Settings/Network.xaml" />
+                <mui:Link DisplayName="appearance" Source="/Pages/Settings/Appearance.xaml" />
                 <mui:Link DisplayName="about" Source="/Pages/Settings/About.xaml" />
             </mui:ModernTab.Links>
         </mui:ModernTab>

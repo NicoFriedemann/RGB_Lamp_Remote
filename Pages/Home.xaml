@@ -9,7 +9,10 @@
     <Grid Style="{StaticResource ContentRoot}">
         <mui:ModernTab Layout="List" SelectedSource="/Pages/Control/Debug.xaml">
             <mui:ModernTab.Links>
-                <mui:Link DisplayName="debug" Source="/Pages/Control/Debug.xaml" />
+                <mui:Link DisplayName="DEBUG" Source="/Pages/Control/Debug.xaml" />
+                <mui:Link DisplayName="PROGRAMS" Source="/Pages/Control/Program_Selection.xaml" />
+                <mui:Link DisplayName="COLOR PICKER" Source="/Pages/Control/Color_Picker.xaml" />
+                <mui:Link DisplayName="COLOR SELECTION" Source="/Pages/Control/Color_Selection.xaml" />
             </mui:ModernTab.Links>
         </mui:ModernTab>
     </Grid>
