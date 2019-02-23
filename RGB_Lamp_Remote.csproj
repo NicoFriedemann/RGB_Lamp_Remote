@@ -69,6 +69,7 @@
     </Page>
     <Compile Include="Libraries\ColorUtils.cs" />
     <Compile Include="Libraries\Networking.cs" />
+    <Compile Include="Libraries\RGB_Lamp.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -102,6 +103,7 @@
     <Compile Include="Pages\Control\Debug.xaml.cs">
       <DependentUpon>Debug.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Control\DebugViewModel.cs" />
     <Compile Include="Pages\Control\Program_Selection.xaml.cs">
       <DependentUpon>Program_Selection.xaml</DependentUpon>
     </Compile>

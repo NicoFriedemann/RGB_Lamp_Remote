@@ -12,8 +12,7 @@ namespace ModernUINavigationApp.Pages.Settings
     /// <summary>
     /// A simple view model for configuring theme, font and accent colors.
     /// </summary>
-    public class AppearanceViewModel
-        : NotifyPropertyChanged
+    public class AppearanceViewModel:NotifyPropertyChanged
     {
         private const string FontSmall = "small";
         private const string FontLarge = "large";

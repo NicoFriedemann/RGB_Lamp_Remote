@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Net;
 using System.Net.Sockets;
+using System.Windows;
 
 namespace ModernUINavigationApp.Pages.Settings
 {
@@ -15,7 +16,10 @@ namespace ModernUINavigationApp.Pages.Settings
         {
             partnerPort = 11001;
             partnerIP = IPAddress.Parse("192.168.178.30");
-            remoteListeningPort = 11000;
+            receivePort = 11000;
+            Application.Current.Properties.Add("PartnerPort", partnerPort);
+            Application.Current.Properties.Add("PartnerIP", partnerIP);
+            Application.Current.Properties.Add("ReceiverPort", receivePort);
         }
 
         private IPAddress partnerIP;
@@ -41,16 +45,16 @@ namespace ModernUINavigationApp.Pages.Settings
                 }
             }
         }
-        private int remoteListeningPort;
+        private int receivePort;
 
-        public int RemoteListeningPort
+        public int ReceivePort
         {
-            get => remoteListeningPort; set
+            get => receivePort; set
             {
                 NotifyPropertyChanged("RemoteListeningPort");
-                if (RemoteListeningPort > 0 && RemoteListeningPort < 50000)
+                if (ReceivePort > 0 && ReceivePort < 50000)
                 {
-                    remoteListeningPort = value;
+                    receivePort = value;
                 }
             }
         }

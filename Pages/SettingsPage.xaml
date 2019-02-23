@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Style="{StaticResource ContentRoot}">
-        <mui:ModernTab Layout="List" SelectedSource="/Pages/Settings/Appearance.xaml">
+        <mui:ModernTab Layout="List" SelectedSource="/Pages/Settings/Network.xaml">
             <mui:ModernTab.Links>
                 <mui:Link DisplayName="network" Source="/Pages/Settings/Network.xaml" />
                 <mui:Link DisplayName="appearance" Source="/Pages/Settings/Appearance.xaml" />
